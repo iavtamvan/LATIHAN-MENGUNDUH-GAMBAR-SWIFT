@@ -11,15 +11,33 @@ class ViewController: UIViewController {
     
     @IBOutlet var movieTableView: UITableView!
     
+    private var movies: [Movie] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         movieTableView.dataSource = self
+        
         movieTableView.register(
             UINib(nibName: "MovieTableViewCell", bundle: nil),
             forCellReuseIdentifier: "movieTableViewCell"
         )
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Task{await getMovies() }
+    }
+    
+    func getMovies() async {
+        let network = NetworkService()
+        
+        do {
+            movies = try await network.getMovies()
+            movieTableView.reloadData()
+        } catch {
+            fatalError("Error: connection failed.")
+        }
     }
 }
 
@@ -67,7 +85,7 @@ extension ViewController: UITableViewDataSource {
         if movie.state == .new {
             Task {
                 do {
-                    let image = try await imageDownloader.downloadImage(url: movie.poster)
+                    let image = try await imageDownloader.downloadImage(url: movie.posterPath)
                     movie.state = .downloaded
                     movie.image = image
                     self.movieTableView.reloadRows(at: [indexPath], with: .automatic)

@@ -20,6 +20,7 @@
 		5C30DD032990AAEC00732704 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C30DD012990AAEC00732704 /* MovieTableViewCell.xib */; };
 		5C30DD052990B2F800732704 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30DD042990B2F800732704 /* MovieModel.swift */; };
 		5C30DD072990B87B00732704 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30DD062990B87B00732704 /* ImageDownloader.swift */; };
+		5C37FE1E29948DE500253544 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37FE1D29948DE500253544 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5C30DD012990AAEC00732704 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		5C30DD042990B2F800732704 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		5C30DD062990B87B00732704 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		5C37FE1D29948DE500253544 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C1CD012299360D3002669F1 /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				5C30DCD929909F8B00732704 /* Assets.xcassets */,
+				5C30DCDB29909F8B00732704 /* LaunchScreen.storyboard */,
+				5C30DCDE29909F8B00732704 /* Info.plist */,
+			);
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		5C1CD013299360FE002669F1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5C30DCD029909F8900732704 /* AppDelegate.swift */,
+				5C30DCD229909F8900732704 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		5C30DCC429909F8900732704 = {
 			isa = PBXGroup;
 			children = (
@@ -107,14 +128,11 @@
 		5C30DCCF29909F8900732704 /* LatihanMengunduhGambar */ = {
 			isa = PBXGroup;
 			children = (
+				5C1CD013299360FE002669F1 /* App */,
+				5C1CD012299360D3002669F1 /* FileSystem */,
 				5C30DD0A2990DF1300732704 /* Utils */,
 				5C30DD092990DF0700732704 /* Model */,
 				5C30DD082990DEFD00732704 /* View */,
-				5C30DCD029909F8900732704 /* AppDelegate.swift */,
-				5C30DCD229909F8900732704 /* SceneDelegate.swift */,
-				5C30DCD929909F8B00732704 /* Assets.xcassets */,
-				5C30DCDB29909F8B00732704 /* LaunchScreen.storyboard */,
-				5C30DCDE29909F8B00732704 /* Info.plist */,
 			);
 			path = LatihanMengunduhGambar;
 			sourceTree = "<group>";
@@ -159,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				5C30DD062990B87B00732704 /* ImageDownloader.swift */,
+				5C37FE1D29948DE500253544 /* NetworkService.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -301,6 +320,7 @@
 				5C30DD022990AAEC00732704 /* MovieTableViewCell.swift in Sources */,
 				5C30DD072990B87B00732704 /* ImageDownloader.swift in Sources */,
 				5C30DCD329909F8900732704 /* SceneDelegate.swift in Sources */,
+				5C37FE1E29948DE500253544 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LatihanMengunduhGambar/Info.plist;
+				INFOPLIST_FILE = LatihanMengunduhGambar/FileSystem/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -505,7 +525,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LatihanMengunduhGambar/Info.plist;
+				INFOPLIST_FILE = LatihanMengunduhGambar/FileSystem/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
