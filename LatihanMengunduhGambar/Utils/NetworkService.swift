@@ -14,8 +14,8 @@ class NetworkService {
   let language = "en-US"
   let page = "1"
  
-  func getMovies() async throws -> [Movie] {
-    var components = URLComponents(string: "https://api.themoviedb.org/3/movie/popular")!
+    func getMovies(movies: String) async throws -> [Movie] {
+    var components = URLComponents(string: "https://api.themoviedb.org/3/movie/\(movies)")!
     components.queryItems = [
       URLQueryItem(name: "api_key", value: apiKey),
       URLQueryItem(name: "language", value: language),

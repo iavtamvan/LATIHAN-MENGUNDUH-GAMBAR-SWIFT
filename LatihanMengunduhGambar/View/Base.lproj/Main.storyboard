@@ -58,17 +58,32 @@
             </objects>
             <point key="canvasLocation" x="1066.4122137404579" y="-2.1126760563380285"/>
         </scene>
-        <!--Now Play-->
+        <!--Up Coming-->
         <scene sceneID="4Qa-A0-Zu0">
             <objects>
-                <viewController id="dyk-lw-uHp" customClass="ProfileViewController" customModule="LatihanMengunduhGambar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dyk-lw-uHp" customClass="NowPlayingViewController" customModule="LatihanMengunduhGambar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jlg-Ym-EEd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HdV-L4-V83">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mQy-wj-8oZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HdV-L4-V83" firstAttribute="leading" secondItem="mQy-wj-8oZ" secondAttribute="leading" id="ALH-Y1-de3"/>
+                            <constraint firstItem="mQy-wj-8oZ" firstAttribute="bottom" secondItem="HdV-L4-V83" secondAttribute="bottom" id="V7h-GY-SE4"/>
+                            <constraint firstItem="HdV-L4-V83" firstAttribute="top" secondItem="mQy-wj-8oZ" secondAttribute="top" id="aON-lJ-bHU"/>
+                            <constraint firstItem="mQy-wj-8oZ" firstAttribute="trailing" secondItem="HdV-L4-V83" secondAttribute="trailing" id="rCm-dh-JwO"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Now Play" id="X7r-Oe-UMC"/>
+                    <navigationItem key="navigationItem" title="Up Coming" id="X7r-Oe-UMC"/>
+                    <connections>
+                        <outlet property="nowPlayingTableView" destination="HdV-L4-V83" id="Zsf-rK-D1J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0eS-lc-vTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,12 +109,12 @@
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
-        <!--Now Play-->
+        <!--Up Coming-->
         <scene sceneID="Vl8-nb-4UR">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Od-ZX-r1i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OFT-Eg-ZZF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Now Play" image="person" catalog="system" id="pIR-2y-nZr"/>
+                    <tabBarItem key="tabBarItem" title="Up Coming" image="person" catalog="system" id="pIR-2y-nZr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PzX-S9-Mo4">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>

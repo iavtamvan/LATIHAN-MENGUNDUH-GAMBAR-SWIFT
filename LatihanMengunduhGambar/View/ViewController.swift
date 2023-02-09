@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         let network = NetworkService()
         
         do {
-            movies = try await network.getMovies()
+            movies = try await network.getMovies(movies: "popular")
             movieTableView.reloadData()
         } catch {
             fatalError("Error: connection failed.")

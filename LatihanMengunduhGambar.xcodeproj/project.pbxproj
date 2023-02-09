@@ -21,7 +21,9 @@
 		5C30DD052990B2F800732704 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30DD042990B2F800732704 /* MovieModel.swift */; };
 		5C30DD072990B87B00732704 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30DD062990B87B00732704 /* ImageDownloader.swift */; };
 		5C37FE1E29948DE500253544 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37FE1D29948DE500253544 /* NetworkService.swift */; };
-		5C37FE2029949AE000253544 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37FE1F29949AE000253544 /* ProfileViewController.swift */; };
+		5C37FE2029949AE000253544 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37FE1F29949AE000253544 /* NowPlayingViewController.swift */; };
+		5CFD480B2994A23A00579F51 /* NowPlayingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD48092994A23A00579F51 /* NowPlayingTableViewCell.swift */; };
+		5CFD480C2994A23A00579F51 /* NowPlayingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CFD480A2994A23A00579F51 /* NowPlayingTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +62,9 @@
 		5C30DD042990B2F800732704 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		5C30DD062990B87B00732704 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		5C37FE1D29948DE500253544 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		5C37FE1F29949AE000253544 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5C37FE1F29949AE000253544 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		5CFD48092994A23A00579F51 /* NowPlayingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingTableViewCell.swift; sourceTree = "<group>"; };
+		5CFD480A2994A23A00579F51 /* NowPlayingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NowPlayingTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +167,9 @@
 				5C30DCD629909F8900732704 /* Main.storyboard */,
 				5C30DCD429909F8900732704 /* ViewController.swift */,
 				5C30DD002990AAEC00732704 /* MovieTableViewCell.swift */,
-				5C37FE1F29949AE000253544 /* ProfileViewController.swift */,
+				5C37FE1F29949AE000253544 /* NowPlayingViewController.swift */,
+				5CFD48092994A23A00579F51 /* NowPlayingTableViewCell.swift */,
+				5CFD480A2994A23A00579F51 /* NowPlayingTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				5C30DCDA29909F8B00732704 /* Assets.xcassets in Resources */,
 				5C30DD032990AAEC00732704 /* MovieTableViewCell.xib in Resources */,
 				5C30DCD829909F8900732704 /* Main.storyboard in Resources */,
+				5CFD480C2994A23A00579F51 /* NowPlayingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +330,8 @@
 				5C30DD022990AAEC00732704 /* MovieTableViewCell.swift in Sources */,
 				5C30DD072990B87B00732704 /* ImageDownloader.swift in Sources */,
 				5C30DCD329909F8900732704 /* SceneDelegate.swift in Sources */,
-				5C37FE2029949AE000253544 /* ProfileViewController.swift in Sources */,
+				5C37FE2029949AE000253544 /* NowPlayingViewController.swift in Sources */,
+				5CFD480B2994A23A00579F51 /* NowPlayingTableViewCell.swift in Sources */,
 				5C37FE1E29948DE500253544 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
